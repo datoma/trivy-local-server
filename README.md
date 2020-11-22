@@ -7,6 +7,7 @@ IF you want to check local Images. you hvbe to mount the  docker socket and remo
 
 #### command
 see the sample docker-compose file and run it via
+
     docker-compose up -d
 
 ## trivy client
