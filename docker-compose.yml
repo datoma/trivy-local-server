@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  trivy-server:
+    image: datoma/trivy-server:latest
+    container_name: trivy-server
+    command: ["trivy", "server", "--listen", "0.0.0.0:4954"]
+    volumes:
+      - "trivy-data:/home/trivy/.cache"
+    ports:
+      - "4954:4954"
+    restart: unless-stopped
+
+# volumes
+volumes:
+  trivy-data:
