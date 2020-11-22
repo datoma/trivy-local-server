@@ -15,3 +15,8 @@ see the sample docker-compose file and run it via
     docker run --name trivy-client --rm -it datoma/trivy-local-server:latest trivy client --remote https://<SERVERNAME>:4954 <IMAGE_TO_CHECK>
 #### json as output
     docker run --name trivy-client --rm -it datoma/trivy-local-server:latest trivy client --remote https://<SERVERNAME>:4954 -f json <IMAGE_TO_CHECK>
+
+## Github
+https://github.com/datoma/trivy-local-server
+## Dockerhub
+https://hub.docker.com/repository/docker/datoma/trivy-local-server
